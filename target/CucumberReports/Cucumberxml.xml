@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="137.426" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="User Login" name="Login with valid credentials - #1.1" time="21.744">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User enters valid email address ErenYeager@gmail.com...................passed
+And Enter valid password Mikasa@7858........................................passed
+And Clicks on login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid credentials - #1.2" time="12.428">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User enters valid email address ErenYeager1@gmail.com..................passed
+And Enter valid password Mikasa@7858........................................passed
+And Clicks on login button..................................................passed
+Then User should login successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with Invalid credentials" time="11.433">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User enters invalid email address "ErenYeager123@gmail.com"............passed
+And Enter invalid password "1234"...........................................passed
+And Clicks on login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with invalid email address and valid password" time="11.153">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User enters invalid email address "ErenYeager123@gmail.com"............passed
+And Enter valid password "Mikasa@7858"......................................passed
+And Clicks on login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with valid email address and invalid password" time="10.638">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User enters valid email address "ErenYeager@gmail.com".................passed
+And Enter invalid password "1234"...........................................passed
+And Clicks on login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login without providing any credentials" time="10.727">
+<system-out><![CDATA[
+Given User navigates to login page..........................................passed
+When User dont enter any credentials........................................passed
+And Clicks on login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Register" name="Register with mandatory field" time="10.545">
+<system-out><![CDATA[
+Given User navigates to Register Account page...............................passed
+When User enters below details..............................................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Register" name="Register with all field" time="11.554">
+<system-out><![CDATA[
+Given User navigates to Register Account page...............................passed
+When User enters below details..............................................passed
+And Selects Yes for Newsletter..............................................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Register" name="Register with duplicate email address" time="10.455">
+<system-out><![CDATA[
+Given User navigates to Register Account page...............................passed
+When User enters below details..............................................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Warning message informing the user about duplicate email address should be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="User Register" name="Register without providing any fields" time="13.4">
+<system-out><![CDATA[
+Given User navigates to Register Account page...............................passed
+When User dont enter details into any field.................................passed
+And Clicks on Continue button...............................................passed
+Then Warning message should be displayed for the mandatory fields...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign out functionality" name="User successfully signs out - #1.1" time="12.71">
+<system-out><![CDATA[
+Given User is on login page.................................................passed
+When User enters valid ErenYeager@gmail.com and Mikasa@7858.................passed
+And User clicks on the sign out button......................................passed
+Then User should be redirected to the logout page...........................passed
+And User should see a confirmation message "You have been logged off your account. It is now safe to leave the computer.".passed
+]]></system-out>
+</testcase>
+</testsuite>
